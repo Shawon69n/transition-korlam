@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+<style>
+
+    .field{
+        border: 1px solid rgb(255, 255, 255);
+        margin-top: 50px;
+        display: flex;
+    }
+
+    .racket-size{
+        width: 400px;
+        padding: 20px;
+
+        transition: transform .2s ease-in;
+
+    }
+    
+    .field:hover .smash{
+        transform: rotate(65deg);
+        transform-origin: bottom right;
+        
+    }
+
+    .feather{
+        position: relative;
+        height: 80px;
+        margin-left: 130px;
+        transition: transform .1s ease-out .2s;
+
+    }
+
+
+    .field:hover .coc{transform: translate(700px, 100px);
+        }
+
+</style>
+
+</head>
+
+
+<body>
+    <h1>Jevabe badminton e chap marte hoy</h1>
+
+    <div class="field">
+       <div> <img class="racket-size smash" src="image/racket.png" alt=""></div>
+
+        <div class="field">
+            <img class="feather coc" src="image/feather.png" alt="">
+        </div>
+    </div>
+
+    
+
+
+    
+</body>
+</html>
